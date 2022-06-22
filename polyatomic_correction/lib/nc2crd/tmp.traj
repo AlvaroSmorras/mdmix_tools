@@ -1,0 +1,6 @@
+parm ../CDK8_ETA_ETA_1.prmtop
+trajin mdXX.nc
+trajout mdXX.crd
+run
+quit
+

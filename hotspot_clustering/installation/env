@@ -1,0 +1,3 @@
+conda deactivate
+source ~/bin/anaconda2
+conda activate surf_cluster

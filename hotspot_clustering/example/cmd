@@ -1,0 +1,2 @@
+#To obtain the KEAP1_clusts.pdb I used the following comand
+python ../lib/surf_cluster.py -n KEAP1 -r KEAP1_noh.pdb -t KEAP1_noh.mol2 -m 4 -i 5
