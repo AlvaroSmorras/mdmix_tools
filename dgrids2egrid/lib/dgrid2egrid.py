@@ -3,6 +3,8 @@
 from gridData import Grid
 import numpy as np
 from math import log 
+import sys
+
 def solvent_accessible_dots(g):
     non_accesible = 0
     for x in g.grid:
@@ -37,9 +39,11 @@ def calculate_egrid(dgrid, dgcorrection = 0):
                 dgrid.grid[x][y][z] = fenergy - dgcorrection
     return dgrid
 if __name__=='__main__':
-    folder = 'PROBE_AVG/'
-    dpath = folder + 'ETA_WAT_dgrid.dx'
-    epath = folder + 'ETA_WAT_DG.dx'
+    #folder = 'PROBE_AVG/'
+    #dpath = folder + 'ETA_WAT_dgrid.dx'
+    #epath = folder + 'ETA_WAT_DG.dx'
+    dpath = sys.argv[1]
+    epath = sys.argv[2]
     dgrid = Grid(dpath)
 
     egrid = calculate_egrid(dgrid)
